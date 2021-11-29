@@ -1,0 +1,23 @@
+#include <stdio.h> 
+#include <math.h> 
+#include <stdlib.h>
+
+int main () 
+{ 
+  double a;
+  char lanjut;
+ 
+  printf ("\n\n\t-PROGRAM AKAR KUADRAT-");
+  printf ("\n\nMasukkin angka yang mau diakarin? : ");
+  scanf  ("%lf", &a);
+  printf ("\nJadi, hasil akar kuadrat dari %lf" " adalah %lf\n", a, sqrt(a));
+
+  printf ("\n\nMau ngitung lagi? (y/t):  ");
+  scanf ("%s", &lanjut);
+     if (lanjut == 'y'|| lanjut =='Y')
+     main ();
+     else
+     exit (0);
+
+return 0; 
+}
