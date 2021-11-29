@@ -18,6 +18,9 @@ int main ()
      main ();
      else
      exit (0);
+     
+     //tes nanda
+     printf ("hellooooooooo\n");
 
 return 0; 
 }
