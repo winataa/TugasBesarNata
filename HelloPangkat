@@ -2,7 +2,7 @@
 #include <math.h> 
 #include <stdlib.h>
 
-int main () 
+int main (void) 
 { 
   double a;
   char lanjut;
@@ -19,8 +19,10 @@ int main ()
      else
      exit (0);
      
-     //tes nanda
+    
      printf ("hellooooooooo\n");
+     
+     
 
-return 0; 
+return (0); 
 }
