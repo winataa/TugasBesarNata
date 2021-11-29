@@ -51,7 +51,7 @@ void menu(){
 			break;
 			
 		default:
-			printf ("masukkan anda salah");
+			printf ("Saya kurus");
 	}
 
 	
