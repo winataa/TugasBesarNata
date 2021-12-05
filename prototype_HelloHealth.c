@@ -52,8 +52,10 @@ void menulis_kalori() {
 	fp = fopen("catatan_kalori.txt","a");
 	
 	while(ulang == 1) {
-		
-	printf("Masukkan hari : ", i+1); 
+		fflush(stdin); 
+
+	
+		printf("Masukkan hari : ", i+1); 
 		gets(Asupan[i].hari);
         fprintf(fp, "%s\n", Asupan[i].hari);
         fflush(stdin); 
@@ -69,6 +71,7 @@ void menulis_kalori() {
 		fflush (stdin);
 		
 	
+	system ("cls");
 		
 		printf ("Apakah ingin mengulang? (1/0) : ");
 		scanf ("%d", &ulang);
@@ -81,6 +84,7 @@ void menulis_kalori() {
 	
 	printf ("Data berhasil ditulis \n");
 	system ("pause");
+	system ("cls");
 	menu();
 
 }
