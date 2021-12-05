@@ -105,6 +105,6 @@ void menu(){
 		system ("pause");
 	}
 	}
-	
+	//test catatan
 	return 0;
 }
