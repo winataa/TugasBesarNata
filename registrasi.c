@@ -1,9 +1,7 @@
-/*variabel global*/
-
-#include <stdio.h>
+#include <stdio.h>	/*input library*/
 #include <string.h>
 
-char inputusername [20];
+char inputusername [20];	/*variabel global*/
 char inputpassword [20];
 
 typedef struct user{
@@ -14,7 +12,7 @@ typedef struct user{
 
 user Pengguna;
 
-	void registrasi(){
+	void registrasi(){	/*deklarasi fungsi void*/
 		printf ("==REGISTRASI==\n");
 		printf ("Masukkan nama lengkap : ");
 		gets (Pengguna.namalengkap);
@@ -30,17 +28,14 @@ user Pengguna;
 		}
 
 
-int login() {
+	int login() {
+		system("cls");
 
-
-	system("cls");
-
-	printf ("\t\t==LOGIN==\n");
-	printf ("\n");
-	printf ("\tmasukkan username :");
-	scanf ("%s", &inputusername);
-		
-	printf ("\tmasukkan password :");
+		printf ("\t\t==LOGIN==\n");
+		printf ("\n");
+		printf ("\tmasukkan username :");
+		scanf ("%s", &inputusername);
+		printf ("\tmasukkan password :");
 		scanf ("%s", &inputpassword);
 
 			/*basis*/
@@ -70,7 +65,7 @@ int login() {
 			}
 	
 
-}
+	}
 
 	int main(){
 		registrasi();
