@@ -15,7 +15,7 @@ user Pengguna;
 	void registrasi(){	/*deklarasi fungsi void*/
 		printf ("==REGISTRASI==\n");
 		printf ("Masukkan nama lengkap : ");
-		gets (Pengguna.namalengkap);
+		gets (Pengguna.namalengkap);	/*memanggil array of char nama lengkap dengan spasi*/
 		fflush (stdin);
 		
 		printf ("Masukkan username : ");
