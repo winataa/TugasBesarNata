@@ -163,33 +163,40 @@ void menu(){
 	scanf ("%d", &masukan);
 	
 	switch (masukan) {
-		case 1 : 
-			tentang_kami(){
+		case 1 : {
+			tentang_kami();
 			system ("pause");
 			menu();
+		}
 			break;
 		
-		case 2 :
+			
+		
+		case 2 :{
 			menghitung_IMT();
 			system ("pause");
 			menu();
+		}
 			break;
 			
-		case 3 :
+		case 3 :{
 			menghitung_kebutuhan_kalori_perhari();
 			menu();
+		}
 			break;
 			
-		case 4 :
+		case 4 :{
 			printf ("Coming Soon\n");
 			system ("pause");
 			menu();
+		}
 			break;
 		
-		case 5 :
+		case 5 :{
 			printf ("Coming Soon\n");
 			system ("pause");
 			menu();
+		}
 			break;
 			
 		case 6 :
@@ -199,7 +206,9 @@ void menu(){
 		default:
 			printf ("Coming Soon");
 	}
-}	
+	}	
+
+
 //=======================================================================//
 //>>>>>>>>>>>>>>>>>>>>>>>>>>  Fungsi About Us  <<<<<<<<<<<<<<<<<<<<<<<<<<//
 //=======================================================================//
@@ -219,6 +228,8 @@ void menu(){
 //=======================================================================//
 	
 void tentang_kami() {
+		system ("cls");
+		
             printf ("\t\t\t\t----------------------------------------------------------------- \n");
 	    printf ("\t\t\t\t                        Tentang ProHealth                         \n");  
             printf ("\t\t\t\t----------------------------------------------------------------- \n");
@@ -571,8 +582,6 @@ int main() {
 		
 		login();
 
-		
-		
 
 	return 0;
 }
