@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <string.h>
+
+#define RED "\e[31m\e[1m"
+#define YELLOW "\033[0;33m"
+#define GREEN "\e[32m\e[1m"
+
+int gelas;
+
+void andi(){
+
+            printf ("\n\t\t\t\t                     Kebutuhan cairan tiap orang berbeda-beda. Pada orang dewasa, \n");
+            printf ("\t\t\t\tkonsumsi air putih yang disarankan yaitu sekitar delapan gelas berukuran 230 ml per hari (2 Liter).\n");
+            printf ("\t\t\t\t            Selain dari minuman, makanan juga dapat memberikan asupan cairan pada tubuh.\n");
+
+            printf ("\n\t\t\t\t\t\t\t\t          Nah, kalau kamu, udah minum seberapa banyak hari ini?\n");
+            printf ("\t\t\t\t\t\t                           Aku udah minum sebanyak (Gelas) : ");
+            scanf ("%d", &gelas);
+            fflush (stdin);
+            printf ("\n");
+
+            if (gelas >= 1 && gelas <= 4) {
+            printf (RED "\t\t\t\t\t\t\t\t\t\t\t\t          Baru minum %d gelas ya?", gelas);
+            printf ("\n\t\t\t\t\t\t             Waduh, mending segera minum air deh, jangan sampai dehidrasi ya!\n");
+            }
+            
+            else if (gelas>4 && gelas<=6) {
+            printf (YELLOW "\t\t\t\t\t\t\t\t\t\t\t          Baru minum %d gelas ya?", gelas );
+            printf ("\n\t\t\t\t         Oke, tubuhmu sudah terhidrasi, tapi pastikan untuk minum beberapa gelas lagi ya.\n");
+            }
+
+            else if (gelas == 7) {
+            printf (YELLOW "\t\t\t\t\t\t\t\t\t\t                 Sudah minum %d gelas ya?", gelas);
+            printf ("\n\t\t\t\t\t\t       Mantap tinggal satu gelas lagi dan asupan cairanmu sudah terpenuhi hari ini.\n");
+            }
+            else if (gelas == 8){
+            printf (GREEN "\t\t\t\t\t\t\t\t\t\t                Sudah minum %d gelas ya?", gelas);
+            printf ("\n\t\t\t\t\t\t\t\t   Selamat, anda sudah memenuhi standar kecukupan cairan tubuh!\n");
+            printf ("\n\t\t\t\t\t\t\t\t\t\t\t         STAY HIDRATED, STAY HEALTHY!\n");
+            printf ("\n\t\t\t\t\t\t\t\t\t\t\t                -ProHealth\n");
+            }
+
+            else {
+                printf ("\t\t\t\t                      Masukkinnya dalam ukuran gelas ya!");
+            }
+
+            
+
+}
+
+int main(){
+    andi();
+
+
+    return 0;
+}
