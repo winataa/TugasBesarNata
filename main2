@@ -277,11 +277,11 @@ void regis_login() {
 // Revisi: -						                 //
 //=======================================================================//
 
-void registrasi() {	/*deklarasi fungsi void*/
+void registrasi() {	//deklarasi fungsi void
 		system("cls");
 		
 		printf ("\t\t\t\t\t\t==REGISTRASI==\n");
-		printf ("\t\t\t\tMasukkan nama lengkap : ");
+		printf ("\n\t\t\t\tMasukkan nama lengkap : ");
 		gets (Pengguna.namalengkap);	//memanggil array of char nama lengkap dengan spasi
 		fflush (stdin);
 
@@ -340,7 +340,7 @@ void login() {
 		sleep(1);
 		tampilan();
 		
-		printf ("\t\t\t\t\t\tselamat datang\n\t\t\t\t\t");
+		printf ("\t\t\t\t\t\tselamat datang %s\n\t\t\t\t\t", &Pengguna.username);
 		
 		system ("pause");
 		
@@ -428,7 +428,7 @@ void judul_ProHealth(){
 		219, 223, 219, 219, 223, 219, 219, 223, 219, 219, 219, 178, 223, 223,219, 223, 219, 219, 223, 178, 223, 219, 219, 223);
     	printf("\t\t\t\t      %c%c%c %c%c%c%c %c %c  %c%c%c %c%c%c %c%c%c %c   %c  %c%c%c\n",
 		219,223,223,219,223,223,219,178,219,219,223,219,219,223,223,219,223,219,219,178,219,223,178);
-		printf("\t\t\t\t      %c   %c  %c %c%c%c  %c %c %c%c%c %c %c %c%c%c %c  %c %c\n\n",
+	printf("\t\t\t\t      %c   %c  %c %c%c%c  %c %c %c%c%c %c %c %c%c%c %c  %c %c\n\n",
 	    223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223, 223);
 	
 	
@@ -573,7 +573,7 @@ void menu() {
 //=======================================================================//
 	
 void info() {
-			int masukan_info;
+	    int masukan_info;
 			
 	    system ("cls");
 	    	
@@ -612,8 +612,7 @@ void info() {
 				}
 			}
             
-            
-	    
+      
 			
 }
 
@@ -655,9 +654,13 @@ void layanan_ProHealth() {
             printf ("\t\t\t\t|    seberapa kalori yang tubuh kalian butuhkan per harinya.    | \n");
 	    printf ("\t\t\t\t|                                                               | \n");
             printf ("\t\t\t\t|   Kalori Saat Ini (KALONI), yang akan membantu kalian dalam   | \n");
-            printf ("\t\t\t\t|      mengkalkulasi berapa banyak kalori yang sudah kalian     | \n");
+            printf ("\t\t\t\t|        mencatat berapa banyak kalori yang sudah kalian        | \n");
             printf ("\t\t\t\t|       Konsumsi di tiap makanan yang dimakan per harinya.      | \n");
-            printf ("\t\t\t\t|                                                               | \n");
+	    printf ("\t\t\t\t|                                                               | \n"); 
+	    printf ("\t\t\t\t|  Selain itu ProHealth juga menyediakan menu untuk menampilkan | \n");  
+            printf ("\t\t\t\t|  daftar kalori makanan, menghitung, mencatat dan menampilkan  | \n");
+	    printf ("\t\t\t\t|           konsumsi kalori dari masing-masing user.            | \n");
+	    printf ("\t\t\t\t|                                                               | \n");
             printf ("\t\t\t\t%c%c=============================================================%c%c \n\t\t\t\t",219,220,220,219);
 }
 
@@ -673,7 +676,7 @@ void tentang_pembuat() {
             printf ("\t\t\t\t|               Putu Nanda Arya Adyatma (2105551035))           | \n");
             printf ("\t\t\t\t|                   (github.com/nandaadyatma)                   | \n");
             printf ("\t\t\t\t|                                                               | \n");
-            printf ("\t\t\t\t|                  I Putu Martin Winata (105551049))              | \n");
+            printf ("\t\t\t\t|                I Putu Martin Winata (2105551049))             | \n");
             printf ("\t\t\t\t|                       (github.com/winataa)                    | \n");
             printf ("\t\t\t\t|                                                               | \n");
             printf ("\t\t\t\t|                          Desember 2021                        | \n");
@@ -1172,10 +1175,10 @@ void info_TAKARI() {
             printf ("\t\t\t\t|---------------------------------------------------------------| \n");
             printf ("\t\t\t\t|===============================================================| \n");
             printf ("\t\t\t\t|                                                               | \n");
-	    printf ("\t\t\t\t|  Dengan KALONI (Kalori Saat Ini) Anda bisa memonitor apakah   | \n");
-            printf ("\t\t\t\t|   makanan yang anda konsumsi sudah mampu memenuhi kebutuhan   | \n");
-            printf ("\t\t\t\t|       kalori minimal tubuh anda per harinya, karena akan      | \n");
-            printf ("\t\t\t\t|         dilakukan pencatatan konsumsi kalori di layar.        | \n");   
+	    printf ("\t\t\t\t| Beda orang, beda gender, beda umur, beda aktivitas pasti akan | \n");
+            printf ("\t\t\t\t|    berbeda pula jumlah kalori yang dibutuhkan oleh tubuh.     | \n");
+            printf ("\t\t\t\t|  TAKARI (Takaran Kalori Per Hari) akan membantu menghitung    | \n");
+            printf ("\t\t\t\t|  berapa sebenarnya kebutuhan kalori minimum untuk tubuh Anda  | \n");   
             printf ("\t\t\t\t|                                                               | \n");
             printf ("\t\t\t\t%c%c=============================================================%c%c \n",219,220,220,219);
 }
@@ -1189,7 +1192,7 @@ void info_TAKARI() {
 //                  kalori perhari individu (user). Pada fungsi ini      //
 //                  akan dipanggil fungsi lain yaitu fungsi              //
 //                  memasukkan_jenis_kelamin, BMR_laki_laki,             //
-//                  BMR_perempuan, dan intensitas_aktivitas              //
+//                  BMR_perempuan, dan intensitas_aktivitas.             //
 //                                                                       //
 // Versi : 1.0                                      Rev. -               //
 // Tgl   : 19-12-2021                               Tgl: -               //
@@ -1230,28 +1233,6 @@ void menghitung_kebutuhan_kalori_perhari() {
 
 	intensitas_aktivitas();
 	
-}
-void judul_KALONI() {
-	    printf ("\t\t\t\t%c%c=============================================================%c%c \n",219,223,223,219);
-            printf ("\t\t\t\t|---------------------------------------------------------------| \n");
-	    printf ("\t\t\t\t|     M E N G H I T U N G    K A L O R I    P E R    H A R I    | \n");  
-            printf ("\t\t\t\t|---------------------------------------------------------------| \n");
-            printf ("\t\t\t\t%c%c=============================================================%c%c \n",219,220,220,219);
-}
-void info_KALONI() {
-	    printf ("\t\t\t\t%c%c=============================================================%c%c \n",219,223,223,219);
-            printf ("\t\t\t\t|---------------------------------------------------------------| \n");
-	    printf ("\t\t\t\t|                  T E N T A N G    K A L O N I                 | \n");  
-            printf ("\t\t\t\t|---------------------------------------------------------------| \n");
-            printf ("\t\t\t\t|===============================================================| \n");
-            printf ("\t\t\t\t|                                                               | \n");
-	    printf ("\t\t\t\t|  Dengan KALONI (Kalori Saat Ini) Anda bisa memonitor apakah   | \n");
-            printf ("\t\t\t\t|   makanan yang anda konsumsi sudah mampu memenuhi kebutuhan   | \n");
-            printf ("\t\t\t\t|       kalori minimal tubuh anda per harinya, karena akan      | \n");
-            printf ("\t\t\t\t|         dilakukan pencatatan konsumsi kalori di layar.        | \n");   
-            printf ("\t\t\t\t|                                                               | \n");
-            printf ("\t\t\t\t%c%c=============================================================%c%c \n",219,220,220,219);
-}
 //=======================================================================//
 //>>>>>>>>>>>   Fungsi Untuk Menulis Catatan Kalori Per Hari  <<<<<<<<<<<//
 //=======================================================================//
